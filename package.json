@@ -1,0 +1,20 @@
+{
+  "name": "loadsimulator",
+  "version": "1.0.0",
+  "description": "### How to Get Started",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wayneadams/loadsimulator.git"
+  },
+  "author": "Wayne Adams",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wayneadams/loadsimulator/issues"
+  },
+  "homepage": "https://github.com/wayneadams/loadsimulator#readme"
+}
