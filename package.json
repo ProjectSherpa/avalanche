@@ -1,11 +1,11 @@
 {
-  "name": "loadsimulator",
+  "name": "Avalanche",
   "version": "1.0.0",
-  "description": "### How to Get Started",
-  "main": "server.js",
+  "description": "Load Tester for Project Sherpa",
+  "main": "benchmark.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node benchmark.js"
   },
   "repository": {
     "type": "git",
