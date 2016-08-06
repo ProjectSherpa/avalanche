@@ -25,17 +25,17 @@
 				var concurrency = $('#concurrency').val();
 				var requestsPerSecond = $('#requestsPerSecond').val();
 				var agentKeepAlive = $('#agentKeepAlive').val();
+				var data = {url: url, maxSeconds: maxSeconds, concurrency: concurrency, requestsPerSecond: requestsPerSecond, agentKeepAlive: agentKeepAlive};
 
-				console.log(url, maxSeconds, concurrency, requestsPerSecond, agentKeepAlive)
 				$.ajax({
 				  method: "POST",
 				  url: "/avalanche",
-				  contentType: "text/json",
-				  data: {url: url, maxSeconds: maxSeconds, concurrency: concurrency, requestsPerSecond: requestsPerSecond, agentKeepAlive: agentKeepAlive}
+				  contentType: "application/json",
+				  data: JSON.stringify(data)
 				})
 			  .done(function(msg) {
+			  	console.log("Avalanche complete")
 			  	console.log(msg)
-			    alert("Avalanche complete");
 			  });
 			});  
 	});
