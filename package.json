@@ -1,0 +1,20 @@
+{
+  "name": "Avalanche",
+  "version": "1.0.0",
+  "description": "Load Tester for Project Sherpa",
+  "main": "benchmark.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node benchmark.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wayneadams/loadsimulator.git"
+  },
+  "author": "Wayne Adams",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wayneadams/loadsimulator/issues"
+  },
+  "homepage": "https://github.com/wayneadams/loadsimulator#readme"
+}
