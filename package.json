@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/wayneadams/loadsimulator/issues"
   },
-  "homepage": "https://github.com/wayneadams/loadsimulator#readme"
+  "homepage": "https://github.com/wayneadams/loadsimulator#readme",
+  "dependencies": {
+    "siege": "^0.2.0"
+  }
 }
