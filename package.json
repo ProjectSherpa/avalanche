@@ -7,17 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node benchmark.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/wayneadams/loadsimulator.git"
-  },
-  "author": "Wayne Adams",
+  "author": "Project Sherpa",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/wayneadams/loadsimulator/issues"
-  },
-  "homepage": "https://github.com/wayneadams/loadsimulator#readme",
   "dependencies": {
-    "siege": "^0.2.0"
+    "loadtest": "^1.4.4"
   }
 }
