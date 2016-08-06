@@ -1,10 +1,46 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Avalanche</title>
-  </head>
-  <body>
-    <h1>Get Ready for An Avalanche!</h1>
-  </body>
+<head>
+	<title>Avalanche</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.js"></script>
+</head>
+<body>
+
+<h1>AVALANCHE V1</h1>
+
+<p>Endpoint <input id="url" type="text" name="url"></input></p>
+<p>Duration <input id="maxSeconds" type="text" name="maxSeconds"></input></p>
+<p>Concurrent Threads <input id="concurrency" type="text" name="Concurrent concurrency"></input></p>
+<p>RPS <input id="requestsPerSecond" type="text" name="Requests Per Second"></input></p>
+<p>Keep Alive? (T/F) <input id="agentKeepAlive" type="text" name="Keep Alive"></input></p>
+<button id="button">Run Avalanche</button>
+
+<script>
+
+	$( document ).ready(function() {
+
+			$("#button").click(function(){
+				var url = $('#url').val();
+				var maxSeconds = $('#maxSeconds').val();
+				var concurrency = $('#concurrency').val();
+				var requestsPerSecond = $('#requestsPerSecond').val();
+				var agentKeepAlive = $('#agentKeepAlive').val();
+
+				console.log(url, maxSeconds, concurrency, requestsPerSecond, agentKeepAlive)
+				$.ajax({
+				  method: "POST",
+				  url: "/avalanche",
+				  contentType: "text/json",
+				  data: {url: url, maxSeconds: maxSeconds, concurrency: concurrency, requestsPerSecond: requestsPerSecond, agentKeepAlive: agentKeepAlive}
+				})
+			  .done(function(msg) {
+			  	console.log(msg)
+			    alert("Avalanche complete");
+			  });
+			});  
+	});
+
+</script>
+
+</body>
 </html>
